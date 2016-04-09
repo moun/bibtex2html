@@ -54,7 +54,7 @@ let close_balise ch s =
 
 
 let open_anchor ch s =
-  open_balise ch ("a name=\"" ^ s ^ "\"")
+  open_balise ch ("a id=\"" ^ s ^ "\"")
 
 let close_anchor ch =
   close_balise ch "a"
