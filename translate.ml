@@ -390,8 +390,8 @@ let close_table ch = match !table with
 
 let open_row ch = match !table with
   | Table ->
-      Html.open_balise ch "tr valign=\"top\""; output_string ch "\n";
-      Html.open_balise ch "td align=\"right\" class=\"bibtexnumber\"";
+      Html.open_balise ch "tr"; output_string ch "\n";
+      Html.open_balise ch "td class=\"bibtexnumber\"";
       output_string ch "\n"
   | DL ->
       Html.open_balise ch "dt"; output_string ch "\n"
